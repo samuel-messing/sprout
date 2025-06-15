@@ -32,6 +32,11 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+.metadata
+pubspec.lock
+
+# Generated test mocks
+*.mocks.dart
 
 # Symbolication related
 app.*.symbols
@@ -43,3 +48,31 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# iOS related
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/ephemeral/
+/ios/Runner.xcworkspace/
+
+# macOS related
+/macos/Pods/
+/macos/.symlinks/
+/macos/Flutter/Flutter-Debug.xcconfig
+/macos/Flutter/Flutter-Release.xcconfig
+/macos/Flutter/GeneratedPluginRegistrant.swift
+/macos/Flutter/ephemeral/
+
+# Linux related
+/linux/flutter/
+/linux/.symlinks/
+
+# Windows related
+/windows/flutter/
+/windows/.symlinks/
+
+# Web related
+/web/index.html

@@ -10,7 +10,7 @@ class AudioService {
   static AudioService get instance => _instance;
   AudioService._internal();
 
-  final Record _record = Record();
+  final AudioRecorder _record = AudioRecorder();
   final AudioPlayer _player = AudioPlayer();
   
   Timer? _recordingTimer;
@@ -69,10 +69,12 @@ class AudioService {
 
       // Start recording
       await _record.start(
+        const RecordConfig(
+          encoder: AudioEncoder.wav,
+          bitRate: 128000,
+          sampleRate: 44100,
+        ),
         path: _currentRecordingPath!,
-        encoder: AudioEncoder.wav,
-        bitRate: 128000,
-        samplingRate: 44100,
       );
 
       _isRecording = true;

@@ -15,16 +15,6 @@ void main() async {
   );
   
   // Connect to Firebase emulators in debug mode
-  if (kDebugMode) {
-    try {
-      FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
-      FirebaseFirestore.instance.useFirestoreEmulator('localhost', 8080);
-      FirebaseStorage.instance.useStorageEmulator('localhost', 9199);
-    } catch (e) {
-      // Emulators may already be connected
-      print('Note: Firebase emulators may already be connected or not running: $e');
-    }
-  }
   
   // Initialize anonymous authentication
   await FirebaseService.instance.signInAnonymously();

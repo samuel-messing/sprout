@@ -41,12 +41,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'demo-api-key',
-    appId: '1:000000000000:web:0000000000000000000000',
-    messagingSenderId: '000000000000',
-    projectId: 'demo-project',
-    authDomain: 'demo-project.firebaseapp.com',
-    storageBucket: 'demo-project.appspot.com',
+    apiKey: "AIzaSyBOn2hud1C4WYzVZ07vTtbx6WB8zfCu4to",
+    authDomain: "sprout2025.firebaseapp.com",
+    projectId: "sprout2025",
+    storageBucket: "sprout2025.firebasestorage.app",
+    messagingSenderId: "809416641088",
+    appId: "1:809416641088:web:b53f89e62aa113d8d76da5",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
